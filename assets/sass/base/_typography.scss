@@ -1,0 +1,55 @@
+/*=== Import Fonts ===*/
+
+@font-face{
+    font-family: 'OpenSans-Bold';
+    src:url(../fonts/open-sans/OpenSans-Bold.ttf);
+}
+@font-face{
+    font-family: 'OpenSans-ExtraBolditalic';
+    src:url(../fonts/open-sans/OpenSans-ExtraBolditalic.ttf);
+}
+@font-face{
+    font-family: 'OpenSans-Regular';
+    src:url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: 'OpenSans-Italic';
+    src:url(../../fonts/open-sans/OpenSans-Italic.ttf);
+}
+
+@include for-size(phone-only) {
+	h1 {
+		font-size: $size-x-larg;
+	}
+	h2 {
+		font-size: $size-larg;
+	}
+	h3 {
+		font-size: $size-medium;
+	}
+	h4 {
+		font-size: $size-regular;
+	}
+	h5 {
+		font-size: $size-small;
+	}
+	h6 {
+		font-size: $size-x-small;
+	}
+	p {
+		font-size: $size-small;
+
+		&.semi {
+			font-size: $size-xx-small;
+		}
+		&.reg {
+			font-size: $size-xx-small;
+		}
+		&.med {
+			font-size: $size-x-small;
+		}
+		&.large {
+			font-size: $size-regular;
+		}
+	}
+}
